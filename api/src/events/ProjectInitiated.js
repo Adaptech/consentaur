@@ -1,6 +1,6 @@
 export default class ProjectInitiated {
-  constructor(projectId) {
+  constructor(projectId, name) {
 		this.projectId = projectId;
-		
+		this.name = name;
   }
 }

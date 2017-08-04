@@ -11,6 +11,7 @@ import Initiate from '../commands/Initiate';
 	export default class project {
 		constructor() {
 				this._id = null;
+				this._name = "";
 		}
 
 		hydrate(evt) {
@@ -29,6 +30,7 @@ import Initiate from '../commands/Initiate';
 		
 		_onProjectInitiated(evt) {
 				this._projectId = evt.projectId;
+				this._name = evt.name
 				
 		}
 		
@@ -72,7 +74,7 @@ import Initiate from '../commands/Initiate';
 			}
 
 			const result = [];
-			result.push(new ProjectInitiated(command.projectId));
+			result.push(new ProjectInitiated(command.projectId, command.name));
 			return result;
 		}
 		
