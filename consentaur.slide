@@ -1,0 +1,257 @@
+ API
+
+http://adaptechsolutions.net
+
+
+* Service: Consentaur
+
+
+
+*Commands:*
+
+
+- Initiate( projectId, name )
+
+- Request Data( projectId, dataRequestId, dataDescription )
+
+- Record Data Review( projectId, dataRequestId, amended, allowable, consentRequired )
+
+
+*Events:*
+
+Project Initiated, Project Data Requested, Project Data Reviewed
+
+
+
+*Commands:*
+
+
+- Identify Candidate( projectId, candidateId, email )
+
+- Verify Identity( candidateId, administratorId )
+
+- Contact Candidate( candidateId, projectId )
+
+- Enroll Candidate( candidateId, projectId, email, password )
+
+- Record Consent( candidateId, projectId, dataRequestId )
+
+- Record Data Collection( candidateId, projectId )
+
+- Revoke Consent( candidateId, projectId, dataRequestId )
+
+
+*Events:*
+
+Candidate Identified, Candidate Identity Verified, Candidate Contacted, Candidate Enrolled, Candidate Consented, Candidate Data Collected, Candidate Consent Revoked
+
+
+
+
+
+
+
+* Consentaur Service - project Aggregate
+
+*Command:* Initiate
+
+  curl -X POST \
+  http://localhost:3001/api/v1/project/Initiate \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "projectId": "projectId-1"
+  , "name": "name-1"
+  }'
+
+*Result:*
+
+
+- ProjectInitiated
+
+
+* Consentaur Service - project Aggregate
+
+*Command:* Request Data
+
+  curl -X POST \
+  http://localhost:3001/api/v1/project/RequestData \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "projectId": "projectId-1"
+  , "dataRequestId": "dataRequestId-1"
+  , "dataDescription": "dataDescription-1"
+  }'
+
+*Result:*
+
+
+- ProjectDataRequested
+
+
+* Consentaur Service - project Aggregate
+
+*Command:* Record Data Review
+
+  curl -X POST \
+  http://localhost:3001/api/v1/project/RecordDataReview \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "projectId": "projectId-1"
+  , "dataRequestId": "dataRequestId-1"
+  , "amended": "amended-1"
+  , "allowable": "allowable-1"
+  , "consentRequired": "consentRequired-1"
+  }'
+
+*Result:*
+
+
+- ProjectDataReviewed
+
+
+
+
+
+* Consentaur Service - candidate Aggregate
+
+*Command:* Identify Candidate
+
+  curl -X POST \
+  http://localhost:3001/api/v1/candidate/IdentifyCandidate \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "projectId": "projectId-1"
+  , "candidateId": "candidateId-1"
+  , "email": "email-1"
+  }'
+
+*Result:*
+
+
+- CandidateIdentified
+
+
+* Consentaur Service - candidate Aggregate
+
+*Command:* Verify Identity
+
+  curl -X POST \
+  http://localhost:3001/api/v1/candidate/VerifyIdentity \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "candidateId": "candidateId-1"
+  , "administratorId": "administratorId-1"
+  }'
+
+*Result:*
+
+
+- CandidateIdentityVerified
+
+
+* Consentaur Service - candidate Aggregate
+
+*Command:* Contact Candidate
+
+  curl -X POST \
+  http://localhost:3001/api/v1/candidate/ContactCandidate \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "candidateId": "candidateId-1"
+  , "projectId": "projectId-1"
+  }'
+
+*Result:*
+
+
+- CandidateContacted
+
+
+* Consentaur Service - candidate Aggregate
+
+*Command:* Enroll Candidate
+
+  curl -X POST \
+  http://localhost:3001/api/v1/candidate/EnrollCandidate \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "candidateId": "candidateId-1"
+  , "projectId": "projectId-1"
+  , "email": "email-1"
+  , "password": "password-1"
+  }'
+
+*Result:*
+
+
+- CandidateEnrolled
+
+
+* Consentaur Service - candidate Aggregate
+
+*Command:* Record Consent
+
+  curl -X POST \
+  http://localhost:3001/api/v1/candidate/RecordConsent \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "candidateId": "candidateId-1"
+  , "projectId": "projectId-1"
+  , "dataRequestId": "dataRequestId-1"
+  }'
+
+*Result:*
+
+
+- CandidateConsented
+
+
+* Consentaur Service - candidate Aggregate
+
+*Command:* Record Data Collection
+
+  curl -X POST \
+  http://localhost:3001/api/v1/candidate/RecordDataCollection \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "candidateId": "candidateId-1"
+  , "projectId": "projectId-1"
+  }'
+
+*Result:*
+
+
+- CandidateDataCollected
+
+
+* Consentaur Service - candidate Aggregate
+
+*Command:* Revoke Consent
+
+  curl -X POST \
+  http://localhost:3001/api/v1/candidate/RevokeConsent \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+  "candidateId": "candidateId-1"
+  , "projectId": "projectId-1"
+  , "dataRequestId": "dataRequestId-1"
+  }'
+
+*Result:*
+
+
+- CandidateConsentRevoked
+
+
+
+
