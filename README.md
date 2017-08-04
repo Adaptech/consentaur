@@ -1,5 +1,6 @@
 # Consentaur
 
+link to discussion: https://t.me/joinchat/DIfB9wqLLzn8mvB7irBdqA
 
 ![eventstorming](consentaur-eventstorming.png "Consentaur Event Storming")
 
@@ -43,4 +44,4 @@ Candidate Consent Revoked // candidateId, projectId, dataRequestId
 
 ## Getting Started
 
-link to discussion: https://t.me/joinchat/DIfB9wqLLzn8mvB7irBdqA
+
