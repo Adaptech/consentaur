@@ -41,3 +41,5 @@ Candidate Consent Revoked // candidateId, projectId, dataRequestId
 
 
 ## Getting Started
+
+link to discussion: https://t.me/joinchat/DIfB9wqLLzn8mvB7irBdqA
