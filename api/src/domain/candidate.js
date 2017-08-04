@@ -19,6 +19,7 @@ import IdentifyCandidate from '../commands/IdentifyCandidate';
 	export default class candidate {
 		constructor() {
 				this._id = null;
+				this._hasConsented = false;
 		}
 
 		hydrate(evt) {
@@ -75,10 +76,7 @@ import IdentifyCandidate from '../commands/IdentifyCandidate';
 		}
 		
 		_onCandidateConsented(evt) {
-				this._candidateId = evt.candidateId;
-				this._dataRequestId = evt.dataRequestId;
-				this._projectId = evt.projectId;
-				
+				this._hasConsented = true;				
 		}
 		
 		_onCandidateDataCollected(evt) {
@@ -185,6 +183,10 @@ import IdentifyCandidate from '../commands/IdentifyCandidate';
 		_RecordDataCollection(command) {
 			// TODO: Validation Errors
 			const validationErrors = [];
+			if(this._hasConsented === false) {
+			validationErrors.push({"field": "", "msg": "Cannot collect data - candidate has not consented."});
+			}	
+
 			if(validationErrors.length > 0) {
 				throw new errors.ValidationFailed(validationErrors);
 			}

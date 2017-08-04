@@ -6,6 +6,22 @@ link to discussion: https://t.me/joinchat/DIfB9wqLLzn8mvB7irBdqA
 
  ( https://webeventstorming.com )
 
+## Installing & running the API
+
+### Change to api directory
+
+```cd api```
+
+### Install modules
+
+```npm install```
+
+### Run the API
+
+```npm start```
+
+## Event Markdown:
+
 ```
 # Consentaur
 
@@ -44,8 +60,5 @@ Revoke Consent-> //  candidateId, projectId, dataRequestId
 Candidate Consent Revoked // candidateId, projectId, dataRequestId
 
 ```
-
-
-## Getting Started
 
 
