@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Project:
+
 curl -X POST \
 http://localhost:3001/api/v1/project/Initiate \
 -H 'cache-control: no-cache' \
@@ -31,6 +33,8 @@ http://localhost:3001/api/v1/project/RecordDataReview \
 , "consentRequired": "consentRequired-1"
 }'
 
+# Candidate:
+
 curl -X POST \
 http://localhost:3001/api/v1/candidate/IdentifyCandidate \
 -H 'cache-control: no-cache' \
@@ -39,15 +43,6 @@ http://localhost:3001/api/v1/candidate/IdentifyCandidate \
 "projectId": "projectId-1"
 , "candidateId": "candidateId-1"
 , "email": "email-1"
-}'
-
-curl -X POST \
-http://localhost:3001/api/v1/candidate/VerifyIdentity \
--H 'cache-control: no-cache' \
--H 'content-type: application/json' \
--d '{
-"candidateId": "candidateId-1"
-, "administratorId": "administratorId-1"
 }'
 
 curl -X POST \
@@ -68,6 +63,15 @@ http://localhost:3001/api/v1/candidate/EnrollCandidate \
 , "projectId": "projectId-1"
 , "email": "email-1"
 , "password": "password-1"
+}'
+
+curl -X POST \
+http://localhost:3001/api/v1/candidate/VerifyIdentity \
+-H 'cache-control: no-cache' \
+-H 'content-type: application/json' \
+-d '{
+"candidateId": "candidateId-1"
+, "administratorId": "administratorId-1"
 }'
 
 curl -X POST \
@@ -98,5 +102,3 @@ http://localhost:3001/api/v1/candidate/RevokeConsent \
 , "projectId": "projectId-1"
 , "dataRequestId": "dataRequestId-1"
 }'
-
-

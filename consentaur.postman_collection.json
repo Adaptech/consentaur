@@ -1,0 +1,385 @@
+{
+	"id": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+	"name": "consentaur",
+	"description": "",
+	"order": [
+		"ba93f9ea-4291-23c1-7f6b-51043ebcef09",
+		"433094b5-8c00-aaae-ec0d-1e6b6bf4556d",
+		"79920f90-045e-4ab3-3d33-c65ddabdb92c",
+		"7cd9c9c5-5e90-1cb5-e8c8-40a24dee053d",
+		"26700d22-232d-9964-1597-aa70d6f93f26",
+		"48741bb5-cdbc-d3aa-13d0-6a367170b623",
+		"c7ebd78a-1d28-8f26-753e-7f0217c35e2c",
+		"dd3cf40c-98cf-fe7c-9358-16bc5e622eda",
+		"37b6826e-f905-eeb7-12c9-a26751ec8734",
+		"ca588292-8f55-b83d-acbb-6015f72093ed"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1501882243447,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "26700d22-232d-9964-1597-aa70d6f93f26",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/candidate/ContactCandidate",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501883826239,
+			"name": "5_ContactCandidate",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/candidate/ContactCandidate \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"candidateId\\\": \\\"candidateId-1\\\"\n, \\\"projectId\\\": \\\"projectId-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"candidateId\": \"candidateId-1\"\n, \"projectId\": \"projectId-1\"\n}"
+		},
+		{
+			"id": "37b6826e-f905-eeb7-12c9-a26751ec8734",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/candidate/RecordDataCollection",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501883904742,
+			"name": "9_RecordCandidateDataCollection",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/candidate/RecordDataCollection \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"candidateId\\\": \\\"candidateId-1\\\"\n, \\\"projectId\\\": \\\"projectId-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"candidateId\": \"candidateId-1\"\n, \"projectId\": \"projectId-1\"\n}"
+		},
+		{
+			"id": "433094b5-8c00-aaae-ec0d-1e6b6bf4556d",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/project/RequestData",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501884702558,
+			"name": "2_RequestProjectDataReview",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/project/RequestData \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"projectId\\\": \\\"projectId-1\\\"\n, \\\"dataRequestId\\\": \\\"dataRequestId-1\\\"\n, \\\"dataDescription\\\": \\\"dataDescription-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"projectId\": \"projectId-1\"\n, \"dataRequestId\": \"dataDescription-1\"\n, \"dataDescription\": \"Bloodtype, body mass index\"\n}"
+		},
+		{
+			"id": "48741bb5-cdbc-d3aa-13d0-6a367170b623",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/candidate/EnrollCandidate",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501884857652,
+			"name": "6_EnrollCandidate",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/candidate/EnrollCandidate \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"candidateId\\\": \\\"candidateId-1\\\"\n, \\\"projectId\\\": \\\"projectId-1\\\"\n, \\\"email\\\": \\\"email-1\\\"\n, \\\"password\\\": \\\"password-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"candidateId\": \"candidateId-1\"\n, \"projectId\": \"projectId-1\"\n, \"email\": \"someemail@somewhere.com\"\n, \"password\": \"myencryptedpassword\"\n}"
+		},
+		{
+			"id": "79920f90-045e-4ab3-3d33-c65ddabdb92c",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/project/RecordDataReview",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501884782935,
+			"name": "3_RecordProjectDataReview",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/project/RecordDataReview \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"projectId\\\": \\\"projectId-1\\\"\n, \\\"dataRequestId\\\": \\\"dataRequestId-1\\\"\n, \\\"amended\\\": \\\"amended-1\\\"\n, \\\"allowable\\\": \\\"allowable-1\\\"\n, \\\"consentRequired\\\": \\\"consentRequired-1\\\"\n}'\n",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"projectId\": \"projectId-1\"\n, \"dataRequestId\": \"dataRequestId-1\"\n, \"amended\": \"false\"\n, \"allowable\": \"false\"\n, \"consentRequired\": \"true\"\n}"
+		},
+		{
+			"id": "7cd9c9c5-5e90-1cb5-e8c8-40a24dee053d",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/candidate/IdentifyCandidate",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501884816879,
+			"name": "4_IdentifyCandidate",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/candidate/IdentifyCandidate \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"projectId\\\": \\\"projectId-1\\\"\n, \\\"candidateId\\\": \\\"candidateId-1\\\"\n, \\\"email\\\": \\\"email-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"projectId\": \"projectId-1\"\n, \"candidateId\": \"candidateId-1\"\n, \"email\": \"someemail@somewhere.com\"\n}"
+		},
+		{
+			"id": "ba93f9ea-4291-23c1-7f6b-51043ebcef09",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/project/Initiate",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501884561787,
+			"name": "1_InitiateProject",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/project/Initiate \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"projectId\\\": \\\"projectId-1\\\"\n, \\\"name\\\": \\\"name-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"projectId\": \"projectId-1\"\n, \"name\": \"My Research Project\"\n}"
+		},
+		{
+			"id": "c7ebd78a-1d28-8f26-753e-7f0217c35e2c",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/candidate/VerifyIdentity",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501884029011,
+			"name": "7_VerifyCandidateIdentity",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/candidate/VerifyIdentity \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"candidateId\\\": \\\"candidateId-1\\\"\n, \\\"administratorId\\\": \\\"administratorId-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"candidateId\": \"candidateId-1\"\n, \"administratorId\": \"administratorId-1\"\n}"
+		},
+		{
+			"id": "ca588292-8f55-b83d-acbb-6015f72093ed",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/candidate/RevokeConsent",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501884870988,
+			"name": "10_RevokeCandidateConsent",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/candidate/RevokeConsent \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"candidateId\\\": \\\"candidateId-1\\\"\n, \\\"projectId\\\": \\\"projectId-1\\\"\n, \\\"dataRequestId\\\": \\\"dataRequestId-1\\\"\n}'",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"responses": [],
+			"rawModeData": "{\n\"candidateId\": \"candidateId-1\"\n, \"projectId\": \"projectId-1\"\n, \"dataRequestId\": \"dataRequestId-1\"\n}"
+		},
+		{
+			"id": "dd3cf40c-98cf-fe7c-9358-16bc5e622eda",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3001/api/v1/candidate/RecordConsent",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "58ebe2bb-00d3-e5bf-ecc9-2f3adefcd444",
+			"data": [],
+			"dataMode": "raw",
+			"name": "8_RecordCandidateConsent",
+			"description": "Generated from a curl request: \ncurl -X POST \\\nhttp://localhost:3001/api/v1/candidate/RecordConsent \\\n-H 'cache-control: no-cache' \\\n-H 'content-type: application/json' \\\n-d '{\n\\\"candidateId\\\": \\\"candidateId-1\\\"\n, \\\"projectId\\\": \\\"projectId-1\\\"\n, \\\"dataRequestId\\\": \\\"dataRequestId-1\\\"\n}'",
+			"descriptionFormat": "html",
+			"time": 1501883782260,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"candidateId\": \"candidateId-1\"\n, \"projectId\": \"projectId-1\"\n, \"dataRequestId\": \"dataRequestId-1\"\n}"
+		}
+	]
+}
