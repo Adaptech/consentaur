@@ -22,6 +22,9 @@ Project Data Request*
 
 Identify Candidate -> // projectId, candidateId, email
 Candidate Identified // projectId, candidateId, email
+
+Verify Identity-> // candidateId, administratorId
+Candidate Identity Verified // candidateId, administratorId
 Candidate List*
 Candidate Profile*
 
@@ -39,6 +42,7 @@ Collected Data*
 
 Revoke Consent-> //  candidateId, projectId, dataRequestId
 Candidate Consent Revoked // candidateId, projectId, dataRequestId
+
 ```
 
 
